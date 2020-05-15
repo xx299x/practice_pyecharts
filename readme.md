@@ -54,7 +54,7 @@ git push origin master
 
 ## 其他问题
 
-如果出现其他问题，请删除fork的仓库后重新按本教程操作。
+如果出现其他问题，请删除`fork的仓库`和删除`d盘`的`practice_pyecharts`文件夹后重新按本教程操作。
 
 删除步骤如下：
 
