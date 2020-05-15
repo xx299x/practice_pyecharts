@@ -23,8 +23,15 @@ cd /d/
 git clone https://github.com/xx299x/practice_pyecharts.git
 ```
 
-将作业移动到相应的文件夹下。
+将作业移动到`5-15`文件夹下。
 
+输入
+```bash
+cd practice_pyecharts
+git config --global user.email "你的邮箱"
+git config --global user.email "你的姓名"
+```
+再接着输入。
 输入
 ```bash
 git add .
