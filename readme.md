@@ -35,7 +35,13 @@ git config --global user.email "你的姓名"
 输入
 ```bash
 
+git checkout master
+
 git remote add upstream https://github.com/xx299x/practice_pyecharts.git
+
+git fetch upstream/master
+
+git reset --hard upstream/master
 
 git add .
 
