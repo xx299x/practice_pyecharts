@@ -13,7 +13,7 @@
 刷新之后，找到`Clone or download`并点击，复制下面的地址。
 
 ## 第二步
-打开 GET bash 
+打开 git bash 
 
 输入以下代码
 
@@ -28,27 +28,20 @@ git clone https://github.com/xx299x/practice_pyecharts.git
 输入
 ```bash
 cd practice_pyecharts
-git config --global user.email "你的邮箱"
-git config --global user.email "你的姓名"
+git config --global user.email "example@example.com"
+git config --global user.email "Author"
 ```
 再接着输入。
 输入
 ```bash
-
-git checkout master
-
-git remote add upstream https://github.com/xx299x/practice_pyecharts.git
-
-git fetch upstream/master
-
-git reset --hard upstream/master
-
 git add .
-
 git commit -m '更新日志'
-
 git push origin master
 ```
+然后输入账号密码提交。
+## 第三部
+回到你的仓库，点击`new pull request`
 
-然后输入账号密码提交。
-然后输入账号密码提交。
+到下一个页面继续点击`create pull request`
+
+然后在`Title`文本框中填写你的`学号+姓名`后点击`create pull requset`即可。
