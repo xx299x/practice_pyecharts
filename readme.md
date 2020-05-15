@@ -46,7 +46,7 @@ git push origin master
 ```
 然后输入账号密码提交。
 ## 第三步
-回到你的仓库，点击`new pull request`
+回到`fork的仓库`，点击`new pull request`
 
 到下一个页面继续点击`create pull request`
 
@@ -58,7 +58,7 @@ git push origin master
 
 删除步骤如下：
 
-1. 进入你的仓库主页。
+1. 进入你的`fork的仓库`主页。
 2. 点击`sitting`。
 3. 拉到网页最下方，点击`Delete this repository`
 4. 确认删除。
