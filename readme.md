@@ -39,7 +39,7 @@ git commit -m '更新日志'
 git push origin master
 ```
 然后输入账号密码提交。
-## 第三部
+## 第三步
 回到你的仓库，点击`new pull request`
 
 到下一个页面继续点击`create pull request`
