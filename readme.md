@@ -34,6 +34,9 @@ git config --global user.email "你的姓名"
 再接着输入。
 输入
 ```bash
+
+git remote add upstream https://github.com/xx299x/practice_pyecharts.git
+
 git add .
 
 git commit -m '更新日志'
