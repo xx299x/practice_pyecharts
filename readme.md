@@ -34,12 +34,14 @@ cd practice_pyecharts
 -------03_王五
 ----
 ```
-
-
-然后回到bash输入
-```bash
+如果是第一次使用github 上传文件，先设置 邮箱和用户名
+```
 git config --global user.email "example@example.com"
-git config --global user.email "Author"
+git config --global user.name "Author"
+```
+如果已经设置过用户名继续下面的步骤。
+回到bash输入
+```bash
 git add .
 git commit -m '更新日志'
 git push origin master
