@@ -17,10 +17,10 @@
 
 输入以下代码
 
-将后面的https地址换为你刚才复制的。
+**将后面的https地址换为你刚才复制的。**
 ```bash
 cd /d/
-git clone https://github.com/xx299x/practice_pyecharts.git
+git clone https://github.com/yourId/practice_pyecharts.git
 cd practice_pyecharts
 ```
 用资源管理器打开目录`D:/practice_pyecharts`
@@ -29,9 +29,9 @@ cd practice_pyecharts
 ```
 --practice_pyecharts
 ----5-15
--------01 张三
--------02 李四
--------03 王五
+-------01_张三
+-------02_李四
+-------03_王五
 ----
 ```
 
