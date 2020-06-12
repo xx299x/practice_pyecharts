@@ -1,0 +1,635 @@
+<html><head>
+	<meta charset="UTF-8">
+	<title>电子商务数据分析职业技能等级考试系统 （初级）</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" href="http://192.168.181.66:8080/1x/resources/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://192.168.181.66:8080/1x/resources/plugins/layer/skin/layer.css">
+	<link rel="stylesheet" href="http://192.168.181.66:8080/1x/resources/css/exam.css">
+	<link rel="stylesheet" href="http://192.168.181.66:8080/1x/resources/plugins/excelx/css/excel.css">
+	<link rel="stylesheet" href="http://192.168.181.66:8080/1x/resources/plugins/excelx/js/dist/handsontable/handsontable.full.min.css">
+	<link rel="stylesheet" href="http://192.168.181.66:8080/1x/resources/plugins/jquery-excel/css/excel.css" type="text/css">
+<link rel="stylesheet" href="http://192.168.181.66:8080/1x/resources/plugins/layer/skin/layer.css" id="layui_layer_skinlayercss"><style>@font-face{font-family:uc-nexus-iconfont;src:url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff) format('woff'),url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf) format('truetype')}</style></head>
+
+<body>
+	<div class="excel-sider open" id="open" style="display: none;">展开小工具</div>
+	<div class="excel-wrapper">
+		<div class="excel-sider closed" id="up">收起小工具</div>
+		<div class="bg-write excel-hidden"></div>
+	</div>
+	<div class="wrapper">
+		<!--*************************头部*******************-->
+		<section class="header clear">
+			<div class="res-logo">
+				<i class="res-logo-img"></i>
+				<span>电子商务数据分析职业技能等级考试系统 （初级）</span>
+			</div>
+			<div class="res-user">
+				<span>2018001</span>
+				<a href="#" title="退出"><i class="iconfont icon_retreat_from" id="exit"></i></a>
+			</div>
+		</section>
+		<!--*************************头部*******************-->
+		<section>
+			<div class="exam-wrap">
+				<!--*************************主内容*******************-->
+				<div class="exam-main box"><div class="exam-theme">数据采集：第<i>1</i>题（<span>5.00</span>分）</div>
+<div class="exam-area"><i class="iconfont icon_data"></i><span>任务信息</span></div>
+<div class="exam-task">
+	<div class="task-item clear">
+		<div class="task-item-name">任务名称</div>
+		<div class="task-item-list">行业数据采集</div>
+	</div>
+	<div class="task-item clear">
+		<div class="task-item-name">任务背景</div>
+		<div class="task-item-list open">
+			<div class="task-page"><span>某零食网店主要经营面包、蛋糕、点心等小零食，近期店铺准备上新一批新品，在进行产品上新的时候需要分析最新的市场情况。</span></div>
+						<div class="task-all" onclick="foldEffect(this)">
+				<span>收起背景</span><i class="iconfont icon_toggle_down"></i>
+			</div>
+					</div>
+	</div>
+	<div class="task-item clear">
+		<div class="task-item-name">关联方案</div>
+		<div class="task-item-list">
+						<span class="case" onclick="openPlan('市场数据采集')">
+				市场数据采集
+			</span>
+					</div>
+	</div>
+	<div class="task-item clear">
+		<div class="task-item-name">任务要求</div>
+		<div class="task-item-list">
+			<div class="task-page">了解整个行业的销售情况和整个市场的增长情况，能更好地指导店铺优化产品。每年的第四季度是零食行业的销售旺季，尤其是11月和12月份，运营人员计划统计11月9日-12月8日共30天的零食行业市场销售情况，选择关键的行业数据指标，完成网店行业数据采集任务。（采集店铺整体的所有终端数据）</div>
+						<div class="task-all" onclick="foldEffect(this)">
+				<span>全部要求</span><i class="iconfont icon_toggle_down"></i>
+			</div>
+					</div>
+	</div>
+</div>
+<div class="exam-area"><i class="iconfont icon_examination orange"></i>
+	<span>任务实施</span>
+</div>
+<div class="exam-info">
+<button type="button" class="btn-blue" id="collect"><i class="iconfont icon_collection1"></i> 进入数据中心</button>
+</div>
+<form id="editForm">
+	<input type="hidden" name="recordID" id="recordID" class="form-control" value="2567">
+	<input type="hidden" name="taskAnswer" id="taskAnswer" class="form-control" value="">
+	<input type="hidden" name="resourcePath" id="resourcePath" class="form-control" value="">
+	<input type="hidden" name="resourceName" id="resourceName" class="form-control" value="">
+	<div class="exam-content clear">
+		<div class="item">
+			<i class="iconfont icon-exam"></i><span>你的答案</span>
+			<!--
+			-->
+		</div>
+		<div class="result">采集结果<label>（点击文件下载,进行查看）</label></div>
+			</div>
+	<div class="exam-action clear">
+		<button type="button" class="btn-blue prev" disabled="disabled">上一题</button>
+		<button type="button" class="btn-blue next">下一题</button>
+		<input type="button" value="save" id="btnSave" style="display: none;">
+	</div>
+	<!--*************************关联方案*******************-->
+<div class="dialog-wrap">
+	<div class="dialog dialog-case scroll">
+		<h1>市场数据采集</h1>
+		<div class="info">
+			 <p>
+	<br>
+</p>
+<div align="center">
+	<p>
+		</p><table border="0" cellspacing="0" style="width:417.95pt;border:none;">
+			<tbody>
+				<tr>
+					<td width="129" valign="center" style="border:1.0000pt solid windowtext;">
+						<p>
+							<b><span style="font-family:" font-size:9pt;"="">背景介绍</span></b><b><span style="font-family:" font-size:9pt;"=""></span></b> 
+						</p>
+					</td>
+					<td width="427" valign="center" style="border:1.0000pt solid windowtext;">
+						<p>
+							<span style="font-family:" font-size:9pt;"="">在进入一个陌生的产品领域时，企业需要对目标行业的发展状况进行了解，明确该领域属于朝阳行业还是夕阳行业，目标市场正在红海厮杀，还是广阔蓝海。了解行业状况后还需对行业中的竞争对手、竞品等进行分析，了解行业的竞争程度、盈利状况、各企业/品牌市场占比状况等。</span><span style="font-family:" font-size:9pt;"=""></span> 
+						</p>
+						<p>
+							<span style="font-family:" font-size:9pt;"="">店铺准备进行产品上新，现需要对零食行业的整体发展趋势及竞品运营状况进行分析。</span><span style="font-family:" font-size:9pt;"=""></span> 
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="129" valign="center" style="border:1.0000pt solid windowtext;">
+						<p>
+							<b><span style="font-family:" font-size:9pt;"="">分析目标</span></b><b><span style="font-family:" font-size:9pt;"=""></span></b> 
+						</p>
+					</td>
+					<td width="427" valign="center" style="border:1.0000pt solid windowtext;">
+						<p>
+							<span style="font-family:" font-size:9pt;"="">1</span><span style="font-family:" font-size:9pt;"="">.</span><span style="font-family:" font-size:9pt;"="">零食行业发展趋势分析；</span><span style="font-family:" font-size:9pt;"=""></span> 
+						</p>
+						<p>
+							<span style="font-family:" font-size:9pt;"="">2.</span><span style="font-family:" font-size:9pt;"="">竞品运营状况分析。</span><span style="font-family:" font-size:9pt;"=""></span> 
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="129" valign="center" style="border:1.0000pt solid windowtext;">
+						<p>
+							<b><span style="font-family:" font-size:9pt;"="">数据分析指标</span></b><b><span style="font-family:" font-size:9pt;"=""></span></b> 
+						</p>
+					</td>
+					<td width="427" valign="center" style="border:1.0000pt solid windowtext;">
+						<p>
+							<span style="font-family:" font-size:9pt;"="">行业趋势类指标；</span>
+						</p>
+						<p>
+							<span style="font-family:" font-size:9pt;"="">竞争对手类指标。</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="129" valign="center" style="border:1.0000pt solid windowtext;">
+						<p>
+							<b><span style="font-family:" font-size:9pt;"="">数据来源渠道及采集工具</span></b><b><span style="font-family:" font-size:9pt;"=""></span></b> 
+						</p>
+					</td>
+					<td width="427" valign="center" style="border:1.0000pt solid windowtext;">
+						<p>
+							<span style="font-family:" font-size:9pt;"="">通过本平台提供的数据中心。</span><span style="font-family:" font-size:9pt;"=""></span>
+						</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	<p></p>
+<br>
+</div>
+<p>
+	<br>
+</p>
+		</div>
+	</div>
+</div>
+<!--*************************关联方案*******************-->
+	
+</form>
+
+<div class="baktop" style="display: none;"><i class="iconfont icon_scrollTop"></i></div>
+<script>
+	$(function () {
+		// 数据采集-生意参谋
+		$("#collect").click(function () {
+			var num = $("#task"+2567).text().trim();
+			window.open(
+				'http://192.168.181.66:8080/1x/student/home.htm?op=1&recordID=2567&matchId=2&userId=44&missionId=1&typeName=市场数据采集&num='+num,
+				'_blank');
+			// location.href = 'http://192.168.181.66:8080/1x/student/home.htm?op=1&recordID=2567&matchId=2&userId=44&missionId=1&typeName=市场数据采集';
+		});
+		//提交校验
+		var form = new UserForm([], true, true);
+		form.set_submit(
+			"btnSave",
+			function (form) {
+				var status = $("#resourcePath").val();
+				var recordID = $("#recordID").val();
+				if (status != "")
+					loadTask(recordID, "1");
+				else
+					loadTask(recordID, "0");
+			}
+		);
+	})
+</script></div>
+				<!--*************************主内容*******************-->
+				<!--*************************右侧面板*******************-->
+				<div class="exam-right">
+					<div class="box timer-wrap clear">
+						<div class="time-name"><i class="iconfont icon_countdown"></i><span>倒计时</span></div>
+						<input type="hidden" id="endTime" value="2020-06-05 16:33:49">
+						<input type="hidden" id="nowTime" value="2020-06-05 14:12:14">
+						<div class="timer">
+							<span id="count-down"><b id="hour">01</b>:<b id="min">08</b>:<b id="sec">57</b></span></div>
+					</div>
+					<div class="exam-card box">
+						<div class="card-theme clear"><span>答题卡</span><label><i>0</i>/<i>
+									23
+								</i></label></div>
+						<div class="card-panel">
+																					<h2>
+								<span>数据采集</span>
+								<label>共4个任务，20.00分</label>
+							</h2>
+							<div class="card-item">
+																<a href="JavaScript:void(0)" id="task2567" onclick="saveTask(this, '1', 'DataCollectMission', 
+										'5.00', '2567', '2')" class="current">
+									1
+								</a>
+																								<a href="JavaScript:void(0)" id="task2568" onclick="saveTask(this, '3', 'DataCollectMission', 
+										'5.00', '2568', '2')">
+									2
+								</a>
+																								<a href="JavaScript:void(0)" id="task2569" onclick="saveTask(this, '5', 'DataCollectMission', 
+										'5.00', '2569', '2')">
+									3
+								</a>
+																								<a href="JavaScript:void(0)" id="task2570" onclick="saveTask(this, '6', 'DataCollectMission', 
+										'5.00', '2570', '2')">
+									4
+								</a>
+																							</div>
+														<h2>
+								<span>数据分类与处理</span>
+								<label>共5个任务，16.00分</label>
+							</h2>
+							<div class="card-item">
+																<a href="JavaScript:void(0)" id="task2572" onclick="saveTask(this, '9', 'DataSortTask', 
+										'3.20', '2572', '2')">
+									5
+								</a>
+																								<a href="JavaScript:void(0)" id="task2573" onclick="saveTask(this, '3', 'DataSortTask', 
+										'3.20', '2573', '2')">
+									6
+								</a>
+																								<a href="JavaScript:void(0)" id="task2574" onclick="saveTask(this, '2', 'DataSortTask', 
+										'3.20', '2574', '2')">
+									7
+								</a>
+																								<a href="JavaScript:void(0)" id="task2575" onclick="saveTask(this, '7', 'DataSortTask', 
+										'3.20', '2575', '2')">
+									8
+								</a>
+																								<a href="JavaScript:void(0)" id="task2576" onclick="saveTask(this, '12', 'DataSortTask', 
+										'3.20', '2576', '2')">
+									9
+								</a>
+																							</div>
+														<h2>
+								<span>数据描述性分析</span>
+								<label>共5个任务，24.00分</label>
+							</h2>
+							<div class="card-item">
+																<a href="JavaScript:void(0)" id="task2578" onclick="saveTask(this, '2', 'DataAnalysisTask', 
+										'4.80', '2578', '2')">
+									10
+								</a>
+																								<a href="JavaScript:void(0)" id="task2581" onclick="saveTask(this, '7', 'DataAnalysisTask', 
+										'4.80', '2581', '2')">
+									11
+								</a>
+																								<a href="JavaScript:void(0)" id="task2585" onclick="saveTask(this, '3', 'DataAnalysisTask', 
+										'4.80', '2585', '2')">
+									12
+								</a>
+																								<a href="JavaScript:void(0)" id="task2588" onclick="saveTask(this, '10', 'DataAnalysisTask', 
+										'4.80', '2588', '2')">
+									13
+								</a>
+																								<a href="JavaScript:void(0)" id="task2592" onclick="saveTask(this, '11', 'DataAnalysisTask', 
+										'4.80', '2592', '2')">
+									14
+								</a>
+																							</div>
+														<h2>
+								<span>数据监控</span>
+								<label>共1个任务，8.00分</label>
+							</h2>
+							<div class="card-item">
+																<a href="JavaScript:void(0)" id="task2597" onclick="saveTask(this, '2', 'DataMonitorTask', 
+										'8.00', '2597', '2')">
+									15
+								</a>
+																							</div>
+														<h2>
+								<span>数据报表</span>
+								<label>共2个任务，16.00分</label>
+							</h2>
+							<div class="card-item">
+																<a href="JavaScript:void(0)" id="task2602" onclick="saveTask(this, '6', 'DataReportTask', 
+										'8.00', '2602', '2')">
+									16
+								</a>
+																								<a href="JavaScript:void(0)" id="task2603" onclick="saveTask(this, '5', 'DataReportTask', 
+										'8.00', '2603', '2')">
+									17
+								</a>
+																							</div>
+														<h2>
+								<span>数据图表</span>
+								<label>共6个任务，16.00分</label>
+							</h2>
+							<div class="card-item">
+																<a href="JavaScript:void(0)" id="task2605" onclick="saveTask(this, '3', 'DataChartTask', 
+										'2.40', '2605', '2')">
+									18
+								</a>
+																								<a href="JavaScript:void(0)" id="task2608" onclick="saveTask(this, '2', 'DataChartTask', 
+										'3.20', '2608', '2')">
+									19
+								</a>
+																								<a href="JavaScript:void(0)" id="task2611" onclick="saveTask(this, '14', 'DataChartTask', 
+										'3.20', '2611', '2')">
+									20
+								</a>
+																								<a href="JavaScript:void(0)" id="task2614" onclick="saveTask(this, '15', 'DataChartTask', 
+										'2.40', '2614', '2')">
+									21
+								</a>
+																								<a href="JavaScript:void(0)" id="task2617" onclick="saveTask(this, '7', 'DataChartTask', 
+										'2.40', '2617', '2')">
+									22
+								</a>
+																								<a href="JavaScript:void(0)" id="task2620" onclick="saveTask(this, '11', 'DataChartTask', 
+										'2.40', '2620', '2')">
+									23
+								</a>
+																							</div>
+													</div>
+						<div class="card-bot">
+							<p>
+								<span><i class="current"></i>当前任务</span>
+								<span><i class="answered"></i>已完成</span>
+								<span><i></i>未完成</span>
+							</p>
+							<button class="btn-submit" type="button">提交考卷</button>
+						</div>
+					</div>
+				</div>
+				<!--*************************右侧面板*******************-->
+			</div>
+		</section>
+	</div>
+	<div class="baktop" style="display: none;"><i class="iconfont icon_scrollTop"></i></div>
+
+
+<script type="text/javascript" defer="" async="" src="https://track.uc.cn/uaest.js"></script><script src="http://192.168.181.66:8080/1x/resources/js/jquery-1.11.2.min.js"></script>
+<script src="http://192.168.181.66:8080/1x/resources/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://192.168.181.66:8080/1x/resources/plugins/layer/layer.js"></script>
+<script src="http://192.168.181.66:8080/1x/resources/plugins/layer/layeragt.js"></script>
+<script src="http://192.168.181.66:8080/1x/resources/js/common.js"></script>
+<script src="http://192.168.181.66:8080/1x/resources/js/validate.js"></script>
+<script src="http://192.168.181.66:8080/1x/resources/js/message.js"></script>
+<script src="http://192.168.181.66:8080/1x/resources/plugins/excelx/js/dist/xlsx/shim.min.js"></script><script type="text/vbscript" language="vbscript">
+IE_GetProfileAndPath_Key = "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders\"
+Function IE_GetProfileAndPath(key): Set wshell = CreateObject("WScript.Shell"): IE_GetProfileAndPath = wshell.RegRead(IE_GetProfileAndPath_Key & key): IE_GetProfileAndPath = wshell.ExpandEnvironmentStrings("%USERPROFILE%") & "!" & IE_GetProfileAndPath: End Function
+Function IE_SaveFile_Impl(FileName, payload): Dim data, plen, i, bit: data = CStr(payload): plen = Len(data): Set fso = CreateObject("Scripting.FileSystemObject"): fso.CreateTextFile FileName, True: Set f = fso.GetFile(FileName): Set stream = f.OpenAsTextStream(2, 0): For i = 1 To plen Step 3: bit = Mid(data, i, 2): stream.write Chr(CLng("&h" & bit)): Next: stream.Close: IE_SaveFile_Impl = True: End Function
+</script><script type="text/vbscript" language="vbscript">
+Function IE_LoadFile_Impl(FileName): Dim out(), plen, i, cc: Set fso = CreateObject("Scripting.FileSystemObject"): Set f = fso.GetFile(FileName): Set stream = f.OpenAsTextStream(1, 0): plen = f.Size: ReDim out(plen): For i = 1 To plen Step 1: cc = Hex(Asc(stream.read(1))): If Len(cc) < 2 Then: cc = "0" & cc: End If: out(i) = cc: Next: IE_LoadFile_Impl = Join(out,""): End Function
+</script>
+<script src="http://192.168.181.66:8080/1x/resources/plugins/excelx/js/dist/xlsx/xlsx.full.min.js"></script>
+<script src="http://192.168.181.66:8080/1x/resources/plugins/excelx/js/dist/handsontable/handsontable.full.min.js"></script>
+<script src="http://192.168.181.66:8080/1x/resources/plugins/excelx/js/dist/handsontable/languages/zh-CN.min.js"></script>
+<script src="http://192.168.181.66:8080/1x/resources/js/highcharts.js"></script>
+<script src="http://192.168.181.66:8080/1x/resources/js/highcharts-more.js"></script>
+<script src="http://192.168.181.66:8080/1x/resources/js/countDown.js"></script>
+<script src="http://192.168.181.66:8080/1x/resources/js/ezDrag.jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="http://192.168.181.66:8080/1x/resources/plugins/jquery-excel/css/font-awesome.4.6.0.css">
+<link rel="stylesheet" type="text/css" href="http://192.168.181.66:8080/1x/resources/plugins/jquery-excel/css/main.css">
+<script type="text/javascript" src="http://192.168.181.66:8080/1x/resources/plugins/jquery-excel/js/excel.js"></script>
+<script type="text/javascript">
+	$(function () {
+		/* 返回顶部 */
+		$(window).scroll(function (event) {
+			if ($(this).scrollTop() == 0) {
+				$(".baktop").hide();
+			}
+			if ($(this).scrollTop() != 0) {
+				$(".baktop").show();
+			}
+		});
+		$(".baktop").click(function (event) {
+			$("html,body").animate({
+				scrollTop: "0px"
+			}, 500)
+		});
+
+		//禁用回车
+		document.onkeydown = function () {
+			if (window.event && window.event.keyCode == 13) {
+				window.event.returnValue = false;
+			}
+		};
+		$("div.card-item:first").find("a:first").click();
+
+		$("#exit").click(function () {
+			showConfirm("", messages["logout"], function () {
+				location.href = 'http://192.168.181.66:8080/1x/logout.htm'
+			})
+		});
+
+		// 提交试卷
+		$(".btn-submit").click(function () {
+			showConfirm("", messages["submit"], function () {
+				$.get("http://192.168.181.66:8080/1x/student/submit_paper.htm", function (data) {
+					data = JSON.parse(data);
+					console.log(data)
+					if (data.status) {
+						showSuccessAlert("提交", "", function () {
+							location.href = 'http://192.168.181.66:8080/1x/index.htm';
+						});
+					} else {
+						showErrorAlert("提交", "", function () {});
+					}
+				});
+			})
+		})
+
+		$("div.card-theme").find("i:first").text("0");
+		$("div.card-theme").find("i:last").text($("div.card-item:last").find("a:last").text());
+
+		//展开excel工具
+		$("#open").click(function () {
+			var jsonObj = $("#jsonObj").val();
+			var path = "";
+			//	if (_tableName == "DataReportTask") {
+			//		path = "http://192.168.181.66:8080/1x/student/excel_exam.htm";
+			//	} else {
+			//		path = "http://192.168.181.66:8080/1x/student/excel.htm";
+			//	}
+			path = "http://192.168.181.66:8080/1x/student/excel.htm";
+			$(".excel-wrapper").css("transform", "translate3d(0px, 0px, 0px)");
+			$("body").addClass("excel-body");
+			$(".excel-hidden").load(path, {
+				'tableName': _tableName,
+				'jsonObj': jsonObj
+			}, function () {
+				$("#up").addClass("right");
+			});
+		})
+		//收起excel工具
+		$("#up").click(function () {
+			$(".excel-wrapper").css("transform", "translate3d(-100%, 0px, 0px)");
+			$("body").removeClass("excel-body");
+			$("#up").removeClass("right");
+			$(".excel-hidden").empty();
+		})
+
+		Ez.dragInit(function (f, t) {
+			//x 轴目标元素只能拖动一个.
+			if (t.find(".index").length > 0 && t.hasClass("x")) {
+				return false;
+			}
+			/* 指标标签的元素禁止互相拖动 */
+			if (t.find(".index").length >= 0 && t.hasClass("zbox")) {
+				return false;
+			}
+			if ((t.hasClass("axis"))) {
+				f.parent().find(".holder").addClass("active").show();
+				return true;
+			}
+			if ((t.hasClass("zbox"))) {
+				t.find(".holder").removeClass("active").hide();
+				return true;
+			}
+		});
+
+		$.ajaxSetup({
+			statusCode: {
+				499: function (data) {
+					location.href = "http://192.168.181.66:8080/1x/exam_end.htm";
+				}
+			}
+		})
+	})
+
+	//考试倒计时
+
+	var endTimeStr = $("#endTime").val();
+	var nowTimeStr = $("#nowTime").val();
+	var defaults = {
+
+		startTimeStr: "1970/01/10 00:00:00",
+		nowTimeStr: nowTimeStr,
+		endTimeStr: endTimeStr,
+		hourSelector: "#hour",
+		minSelector: "#min",
+		secSelector: "#sec",
+	}
+	if (endTimeStr != "") {
+		$("#count-down").countDown(defaults);
+	}
+
+	function afterFunction() {
+		location.href = "http://192.168.181.66:8080/1x/exam_end.htm";
+	}
+
+	var _obj;
+	var _taskID;
+	var _tableName;
+	var _taskScore;
+	var _recordID;
+	var _firstLoad = true;
+	var _isLast = false;
+
+	function saveTask(obj, taskID, tableName, taskScore, recordID) {
+		this._obj = obj;
+		this._taskID = taskID;
+		this._tableName = tableName;
+		this._taskScore = taskScore;
+		this._recordID = recordID;
+		if ($(obj).text() == 24) {
+			_isLast = true;
+		} else {
+			_isLast = false;
+		}
+		if (_firstLoad) { //第一次进入页面加载任务，不触发保存
+			loadTask();
+			_firstLoad = false;
+		} else {
+			$("#btnSave").click();
+		}
+		if (_tableName == "DataSortTask" || _tableName == "DataChartTask") { // 数据分类，统计显示excel
+			$("#open").show();
+		} else {
+			$("#open").hide();
+		}
+	}
+
+	function loadTask(taskRecordID, taskState) {
+		//改题号样式
+		$(_obj).parents("div.exam-card").find("div.card-item").find("a").removeClass("current");
+		$(_obj).addClass("current");
+		if (taskRecordID != null && taskRecordID != "") {
+			var complete = $("div.card-theme").find("i:first").text();
+			if (taskState == "1") {
+				if (!$("#task" + taskRecordID).hasClass("answered")) {
+					$("#task" + taskRecordID).addClass("answered");
+					complete = parseInt(complete) + 1;
+				}
+			} else {
+				if ($("#task" + taskRecordID).hasClass("answered")) {
+					$("#task" + taskRecordID).removeClass("answered");
+					complete = parseInt(complete) - 1;
+				}
+			}
+			$("div.card-theme").find("i:first").text(complete);
+		}
+
+		if (_isLast) {
+			alert("保存成功");
+		}
+		//转到指定题目
+		commonLoad("http://192.168.181.66:8080/1x/student/exam_task.htm", {
+			"taskID": _taskID,
+			"tableName": _tableName,
+			"recordID": _recordID
+		}, function () {
+			//页面加载完成后改变上一题、下一题按钮样式及事件
+			var index = parseInt($(_obj).text());
+			if (index == 1) {
+				$("div.exam-action").find("button.prev").attr("disabled", "disabled");
+			} else if ((index + 1) == 24) {
+				$("div.exam-action").find("button.next").text("保存");
+			} else {
+				$("div.exam-action").find("button[type=button]").removeAttr("disabled");
+			}
+
+			$("div.exam-action").find("button.prev").click(function () {
+				if (index != 1) {
+					$(_obj).parents("div.exam-card").find("div.card-item").find("a").eq(index - 2)
+						.click();
+					_isLast = false;
+				}
+			});
+			$("div.exam-action").find("button.next").click(function () {
+				if ((index + 1) != 24) {
+					$(_obj).parents("div.exam-card").find("div.card-item").find("a").eq(index).click();
+					_isLast = false;
+				} else {
+					$("#btnSave").click();
+					_isLast = true;
+				}
+			});
+
+			//改变页面标题内容（大类及分数）
+			var tType = $(_obj).parent("div.card-item").prev().find("span").text();
+			$("div.exam-theme").html(tType + "：第<i>" + index + "</i>题（<span>" + _taskScore +
+				"</span>分）");
+		});
+	}
+
+
+	//考试答题，任务背景展开折叠
+	function foldEffect(obj) {
+		var that = $(obj).parent();
+		if (that.hasClass("open")) {
+			that.removeClass("open");
+			var txt = $(obj).find("span").text().replace("收起", "全部");
+			$(obj).find("span").text(txt);
+		} else {
+			that.addClass("open");
+			var txt = $(obj).find("span").text().replace("全部", "收起");
+			$(obj).find("span").text(txt);
+		}
+	}
+
+	function openPlan(name) {
+		win.openhtml(name, $(".dialog-wrap").html(), function () {}, 800, 625);
+	}
+
+	function showAnswer(taskID, tableName) {
+		win.openurl("查看正确答案", 'http://192.168.181.66:8080/1x/student/show_answer.htm?taskID=' + taskID + '&tableName=' + tableName, 800, 600);
+	}
+</script>
+
+</body></html>
