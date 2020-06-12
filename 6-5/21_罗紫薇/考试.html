@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam 在线考试</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        /*======== 全局 ========*/
+        body,
+        div,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        pre,
+        form,
+        fieldset,
+        input,
+        p,
+        blockquote,
+        th,
+        td {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 12px;
+            background-color: #e6e0dba1;
+            font-family: Verdana, Microsoft YaHei, Simsun;
+            line-height: 24px;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        fieldset,
+        img {
+            border: 0;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        .head {
+            background-color: #fff;
+            width: 70%;
+            position: relative;
+            left: 15%;
+            text-align: center;
+            top: 10%;
+            height: 80px;
+            border: 1px solid #d2c9c9;
+        }
+
+        #title {
+            position: relative;
+            top: 20px;
+        }
+
+        #small-title {
+            position: absolute;
+            left: 30px;
+            bottom: 0;
+        }
+
+        .main {
+            width: 70%;
+            height: 90%;
+            position: relative;
+            left: 15%;
+            top: 100px;
+        }
+
+        .main-small-title {
+            width: 100%;
+            height: 80px;
+            background-color: #fff;
+            border: 1px solid #d2c9c9;
+        }
+        .main-small-title-first{
+            position: relative;
+            left: 30px;
+            top: 5px;
+            margin-bottom: 20px;
+        }
+        .main-small-title-second{
+            position: relative;
+            left: 30px;
+            top: 5px;
+        }
+        .timu{
+            position: relative;
+            width: 100%;
+            height: auto;
+            border: 1px solid #d2c9c9;
+            background-color: #fff;
+        }
+        .timu-title{
+            position: relative;   
+            left: 10px;
+        }
+        .check-A,.check-B,.check-C,.check-D{
+            position: relative;
+            left: 1%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #d2c9c9;
+            width: 98%;
+        }
+        .checkd{
+            background-color: #d2c9c9;
+            border: 1px solid #afaeae;
+        }
+        .right{
+            position: absolute;
+            width: 20%;
+            height: auto;
+        }
+        .dati-title{
+            text-align: center;
+            height: 40px;
+            width: 100px;
+            background-color: #35aff3;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div id="title">
+            <h1>小学教师资格考试-2019</h1>
+        </div>
+        <div id="small-title">
+            <h4>全国统考</h4>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-small-title">
+            <div class="main-small-title-first">
+                <h2>单选题</h2>
+            </div>
+            <div class="main-small-title-second">
+                <h3>每题3分，共30分</h3>
+            </div>
+        </div>
+        <div class="timu">
+            <div class="timu-title">1、素质教育理念的核心是（）</div>
+            <div class="check-A checkd"><input type="radio" name="check" value="a" checked> A: 创新</div>
+            <div class="check-B"><input type="radio" name="check" value="b"> B: 发展</div>
+            <div class="check-C"><input type="radio" name="check" value="c"> C: 创造</div>
+            <div class="check-D"><input type="radio" name="check" value="d"> D: 合作</div>
+        </div>
+        <div class="timu">
+            <div class="timu-title">2、"学校下半年生源锐减，教师严重超编，不愿意上早晚自修和补课的同志可以去其他学校高就。"这种说法违反了（）</div>
+            <div class="check-A"><input type="radio" name="check1" value="a" > A: 《学校管理条例》</div>
+            <div class="check-B checkd"><input type="radio" name="check1" value="a" checked> B: 《中华人民共和国教师法》</div>
+            <div class="check-C"><input type="radio" name="check1" value="a"> C: 《中华人民共和国义务教育法》</div>
+            <div class="check-D"><input type="radio" name="check1" value="a"> D: 《教师管理条例》</div>
+        </div>
+
+        <div class="main-small-title">
+            <div class="main-small-title-first">
+                <h2>多选题</h2>
+            </div>
+            <div class="main-small-title-second">
+                <h3>每题5分，共30分</h3>
+            </div>
+        </div>
+        <div class="timu">
+            <div class="timu-title">1、素质教育理念的核心是（）</div>
+            <div class="check-A checkd"><input type="checkbox" name="check2" value="a" checked> A: 创新</div>
+            <div class="check-B"><input type="checkbox" name="check2" value="b"> B: 发展</div>
+            <div class="check-C"><input type="checkbox" name="check2" value="c"> C: 创造</div>
+            <div class="check-D"><input type="checkbox" name="check2" value="d"> D: 合作</div>
+        </div>
+        <div class="timu">
+            <div class="timu-title">2、"学校下半年生源锐减，教师严重超编，不愿意上早晚自修和补课的同志可以去其他学校高就。"这种说法违反了（）</div>
+            <div class="check-A"><input type="checkbox" name="check2" value="a" > A: 《学校管理条例》</div>
+            <div class="check-B checkd"><input type="checkbox" name="check2" value="a" checked> B: 《中华人民共和国教师法》</div>
+            <div class="check-C"><input type="checkbox" name="check2" value="a"> C: 《中华人民共和国义务教育法》</div>
+            <div class="check-D"><input type="checkbox" name="check2" value="a"> D: 《教师管理条例》</div>
+        </div>
+
+        <div class="main-small-title">
+            <div class="main-small-title-first">
+                <h2>判断题</h2>
+            </div>
+            <div class="main-small-title-second">
+                <h3>每题2分，共30分</h3>
+            </div>
+        </div>
+        <div class="timu">
+            <div class="timu-title">1、素质教育理念的核心是创新</div>
+            <div class="check-A checkd"><input type="radio" name="check" value="a" checked> A: 对</div>
+            <div class="check-B"><input type="radio" name="check" value="b"> B: 错</div>
+        </div>
+        <div class="timu">
+            <div class="timu-title">2、"学校下半年生源锐减，教师严重超编，不愿意上早晚自修和补课的同志可以去其他学校高就。"这种说法违反了《中华人民共和国教师法》</div>
+            <div class="check-A"><input type="radio" name="check1" value="a" > A: 对</div>
+            <div class="check-B checkd"><input type="radio" name="check1" value="a" checked> B: 错</div>
+        </div>
+
+
+        <div class="main-small-title">
+            <div class="main-small-title-first">
+                <h2>填空题</h2>
+            </div>
+            <div class="main-small-title-second">
+                <h3>每题2分，共30分</h3>
+            </div>
+        </div>
+        <div class="timu">
+            <div class="timu-title">1、素质教育理念的核心是创新_______</div>
+            <div class="check-A "><input type="text" name="check" value="" checked> </div>
+        </div>
+        <div class="timu">
+            <div class="timu-title">2、"学校下半年生源锐减，教师严重超编，不愿意上早晚自修和补课的同志可以去其他学校高就。"这种说法违反了_______</div>
+            <div class="check-A"><input type="text" name="check" value="" checked> </div>
+        </div>
+    </div>
+    <div class="right">
+        <div style="width: 100%;">
+            <div class="dati-title">答题卡</div>
+            <div style="display: inline-block;">5749 22:12:31</div>
+        </div>
+        <div>
+            <h3>单选题</h3>
+            <div style="display: inline-block;width: 10px;height: 10px;">1</div>
+            <div style="display: inline-block;width: 10px;height: 10px;">2</div>
+            <div style="display: inline-block;width: 10px;height: 10px;">3</div>
+        </div>
+    </div>
+</body>
+
+</html>
